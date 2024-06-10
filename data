@@ -1,0 +1,10 @@
+function sendMessage() {
+    let phoneNumber = '6283896178182 dengan nomor WhatsApp yang dituju
+    let message = 'Hallo, saya tertarik dengan produk Anda!'; // Isi pesan sesuai kebutuhan
+
+    // Format URL dengan nomor dan pesan
+    let url = `https://wa.me/${6283896178182}?text=${encodeURIComponent(message)}`;
+
+    // Buka link WhatsApp
+    window.open(url);
+}

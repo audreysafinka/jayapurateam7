@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 7 Jayapura</title>
+    <!--! Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="" class="navbar-logo">Team 7 Jayapura</a>
+      <div class="navbar-nav active">
+        <div class="dropdown">
+          <button class="dropdown-btn">Home <i class="fas fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="https://lookerstudio.google.com/s/nWWIrGHC8Dw">Looker Studio</a>
+            <a href="https://docs.google.com/spreadsheets/d/1cWsQ-JTITuDwWt7qSH_dljLPmwFprBYs/edit?usp=sharing&ouid=111734657045211487043&rtpof=true&sd=true">Data Excel</a>
+            <!-- add more dropdown items as needed -->
+          </div>
+        </div>
+        <a href="#about">Barchart</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Feed Back</a>
+      </div>
+      <div class="navbar-extra">
+        <!-- your extra navbar items here -->
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!--! Hero Section -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Team 7 Jayapura</h1>
+        <p>sebuah website yang menganalisis penjualan sepeda </p>
+        <a href="#" class="cta">Buy Now</a>
+      </main>
+    </section>
+    <!--! Hero Section End -->
+
+    <!--! About Section -->
+    <section id="about" class="about">
+      <h2>Barchart</h2>
+      <div class="container">
+        <div class="chart">
+            <canvas id="barchart" width="400" height="400"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="doughnut" width="300" height="300"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    </section>
+    <!--! About Section End-->
+
+    <!--! Shop Section  -->
+    <section class="product" id="product">
+      <h2>Our Product</h2>
+      <div class="row">
+        <div class="product-card">
+          <img src="asset/SPD0001.jpg" alt="productLaStella" />
+          <h2 class="product-card-title">Mountaint Bike</h2>
+          <p class="product-price">Rp 6.642.000,00</p>
+        </div>
+        <div class="product-card">
+          <img src="asset/SPD0003.jpg" alt="productLaStella" />
+          <h2 class="product-card-title">Race Bike</h2>
+          <p class="product-price">Rp 10.642.000,00</p>
+        </div>
+      </div>
+    </section>
+    <!--! Shop Section End -->
+
+    <!--! Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Feed Back</h2>
+      <div class="row">
+        <div class="row">
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user" style="color: var(--base)"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail" style="color: var(--base)"></i>
+            <input type="text" placeholder="Berikan Kesan dan Pesan" />
+          </div>
+          <a href="https://wa.me/628123456789?text=Hallo,%20saya%20tertarik%20dengan%20produk%20anda" class="btn">Kirim Pesan</a>
+          </div>
+    </section>
+    <!--! Contact Section End-->
+
+    <!--! Footer Section  -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i> </a>
+        <a href="#"><i data-feather="twitter"></i> </a>
+        <a href="#"><i data-feather="facebook"></i> </a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Feed Back</a>
+      </div>
+      <div class="credit">
+        <p>Created by Muhammad Aminudin| &copy; 2024.</p>
+      </div>
+    </footer>
+    <!--! Footer Section End  -->
+
+    <!--! Icon -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  </body>
+</html>
